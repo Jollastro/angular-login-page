@@ -1,0 +1,82 @@
+.app {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "slideshow"
+        "top-logo-panel"
+        "login-form"
+        "bottom-logo-panel";
+    grid-template-rows: 20vh 15vh auto 15vh;
+    &.slideshow {
+        grid-area: slideshow;
+    }
+    &.top {
+        grid-area: top-logo-panel;
+    }
+    &.login-form {
+        grid-area: login-form;
+    }
+    &.bot {
+        grid-area: bottom-logo-panel;
+    }
+}
+@media (min-width: 600px) {
+    .app {
+        grid-template-areas:
+            "slideshow top-logo-panel"
+            "slideshow login-form"
+            "slideshow bottom-logo-panel";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 15vh auto 15vh;
+        .slideshow {
+            grid-column: 1;
+            grid-row: 1 / span 3;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .app {
+        grid-template-areas:
+            "slideshow top-logo-panel"
+            "slideshow login-form"
+            "slideshow bottom-logo-panel";
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 15vh auto 15vh;
+        .slideshow {
+            grid-column: 1;
+            grid-row: 1 / span 3;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .app {
+        grid-template-areas:
+            "slideshow top-logo-panel"
+            "slideshow login-form"
+            "slideshow bottom-logo-panel";
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 15vh auto 15vh;
+        .slideshow {
+            grid-column: 1;
+            grid-row: 1 / span 3;
+        }
+    }
+}
+
+@media (min-width: 1800px) {
+    .app {
+        grid-template-areas:
+            "slideshow top-logo-panel"
+            "slideshow login-form"
+            "slideshow bottom-logo-panel";
+        grid-template-columns: 75% 25%;
+        grid-template-rows: 15vh auto 15vh;
+        .slideshow {
+            grid-column: 1;
+            grid-row: 1 / span 3;
+        }
+    }
+}

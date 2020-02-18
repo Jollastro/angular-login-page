@@ -1,0 +1,40 @@
+.login-form {
+    width: 60%;
+    height: fit-content;
+    box-sizing: border-box;
+    padding-top: 2rem;
+    margin: auto;
+    .top-text {
+        width: 90%;
+        height: fit-content;
+        margin: auto;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: large;
+    }
+    .inputs {
+        width: 100%;
+        height: fit-content;
+        padding-top: 2rem;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 2.5rem 2.5rem 2.5rem;
+        justify-items: center;
+        row-gap: 0.5rem;
+        .login-text {
+            width: 100%;
+        }
+    }
+    .buttons {
+        width: auto;
+        height: auto;
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        .button {
+            width: auto;
+            max-height: 2rem;
+        }
+    }
+}
